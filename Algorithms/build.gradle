@@ -1,5 +1,7 @@
 apply plugin: 'java-library'
+apply plugin: 'application'//add
 
+mainClassName = 'com.jsonlog.algorithms.myClass'//add
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 }

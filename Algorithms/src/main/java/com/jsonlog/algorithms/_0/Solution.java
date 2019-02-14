@@ -1,4 +1,4 @@
-package com.jsonlog.algorithms._000;
+package com.jsonlog.algorithms._0;
 
 import java.util.*;
 

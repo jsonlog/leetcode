@@ -1,6 +1,8 @@
 package com.jsonlog.algorithms;
 import com.jsonlog.algorithms._002.Solution.ListNode;
 
+import javax.sql.rowset.serial.SerialStruct;
+
 public class myClass {
     public static void main(String[] args) {
 //        com.jsonlog.algorithms._001.Solution solution = new com.jsonlog.algorithms._001.Solution();
@@ -25,11 +27,23 @@ public class myClass {
         System.out.println();
 
         com.jsonlog.algorithms._008.Solution solution8 = new com.jsonlog.algorithms._008.Solution();
-        System.out.println(solution8.myAtoi("42"));
-        System.out.println(solution8.myAtoi("   -42"));
-        System.out.println(solution8.myAtoi("4193 with words"));
-        System.out.println(solution8.myAtoi("words and 987"));
-        System.out.println(solution8.myAtoi("-91283472332"));
+//        System.out.println(solution8.myAtoi("42"));
+//        System.out.println(solution8.myAtoi("   -42"));
+//        System.out.println(solution8.myAtoi("4193 with words"));
+//        System.out.println(solution8.myAtoi("words and 987"));
+//        System.out.println(solution8.myAtoi("-91283472332"));
+
+        com.jsonlog.algorithms._012.Solution solution12 = new com.jsonlog.algorithms._012.Solution();
+//        System.out.println(solution12.intToRoman(58));
+
+        com.jsonlog.algorithms._013.Solution solution13 = new com.jsonlog.algorithms._013.Solution();
+//        System.out.println(solution13.romanToInt("MCMXCIV"));
+
+        com.jsonlog.algorithms._016.Solution solution16 = new com.jsonlog.algorithms._016.Solution();
+//        System.out.println(solution16.threeSumClosest(new int[]{-1, 2, 1, -4},1));
+
+        com.jsonlog.algorithms._015.Solution solution15 = new com.jsonlog.algorithms._015.Solution();
+//        System.out.println(solution15.threeSum(new int[]{-1, 0, 1, 2, -1, -4}));
     }
 }
 

@@ -6,6 +6,7 @@
 | 012 | [Integer to Roman](https://leetcode.com/problems/integer-to-roman) | [Medium****](https://github.com/jsonlog/leetcode/blob/master/Algorithms/src/main/java/com/jsonlog/algorithms/_012/Solution.java) |
 | 013 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer) | [Easy****](https://github.com/jsonlog/leetcode/blob/master/Algorithms/src/main/java/com/jsonlog/algorithms/_013/Solution.java) |
 |015  | [3Sum](https://leetcode.com/problems/3sum) | [Medium*****](https://github.com/jsonlog/leetcode/blob/master/Algorithms/src/main/java/com/jsonlog/algorithms/_015/Solution.java) |
+|016  | [3Sum Closest](https://leetcode.com/problems/3sum-closest) | [Medium*****](https://github.com/jsonlog/leetcode/blob/master/Algorithms/src/main/java/com/jsonlog/algorithms/_016/Solution.java)
 |020  | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses) | [Easy*****](https://github.com/jsonlog/leetcode/blob/master/Algorithms/src/main/java/com/jsonlog/algorithms/_020/Solution.java) |
 |021  | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists) | [Easy*****](https://github.com/jsonlog/leetcode/blob/master/Algorithms/src/main/java/com/jsonlog/algorithms/_021/Solution.java) |
 | 022 | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses) | [Medium****](https://github.com/jsonlog/leetcode/blob/master/Algorithms/src/main/java/com/jsonlog/algorithms/_022/Solution.java) |

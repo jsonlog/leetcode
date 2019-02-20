@@ -1,5 +1,6 @@
 package com.jsonlog.algorithms;
 
+import java.util.Arrays;
 import java.util.Date;
 import java.util.Random;
 
@@ -7,6 +8,11 @@ public class helloWorld {
     public static void main(String[] args) {
         System.out.println("Hello, it's: "); System.out.println(new Date());
 //        System.out.println("test");
+
+
+
+
+
         random();
 //        array();
 //        movebit();
@@ -17,8 +23,8 @@ public class helloWorld {
     }
     static void random(){
         for (int i = 0; i < 10; i++) {
-            Random rand = new Random(47);
-            Random rand2 = new Random(47);
+            Random rand = new Random(47);//no change
+            Random rand2 = new Random(47);//equals to rand
             Random rand3 = new Random();
             System.out.println("j2-j3-j-k-p--");
             int j2 = rand2.nextInt(20);
@@ -29,6 +35,7 @@ public class helloWorld {
             int k = rand.nextInt(20);
             int p = rand.nextInt(20);
             System.out.println(j);
+//            System.out.println(rand2.nextInt(20));
             System.out.println(k);
             System.out.println(p);
         }
@@ -42,6 +49,7 @@ public class helloWorld {
         for(int i = 0; i < a1.length; i++)
             System.out.println(
                     "a1[" + i + "] = " + a1[i]);
+//        System.out.println(Arrays.deepToString(a1));
     }
     static void movebit(){
         int i = -128 >> 1;

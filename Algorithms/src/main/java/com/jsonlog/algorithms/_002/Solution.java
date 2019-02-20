@@ -1,18 +1,9 @@
 package com.jsonlog.algorithms._002;
-
+import com.jsonlog.algorithms.ListNode;
 /**
  * Created by log on 10/1/2019.
  */
 public class Solution {
-    public class ListNode {
-        public int val;
-        public ListNode next;
-
-        public ListNode(int x) {
-            val = x;
-            next = null;
-        }
-    }
     public ListNode addTwoNumbers2(ListNode l1, ListNode l2) {
         // 为方便操作加入的头节点
         ListNode head = new ListNode(0);

@@ -1,5 +1,5 @@
 package com.jsonlog.algorithms;
-
+import com.jsonlog.algorithms.ListNode;
 import javax.sql.rowset.serial.SerialStruct;
 
 public class myClass {
@@ -10,15 +10,15 @@ public class myClass {
 //        System.out.println(result1[0]+"-"+result1[1]);//new int[]{0, 4, 3, 0}, 0));
 
         com.jsonlog.algorithms._002.Solution solution2 = new com.jsonlog.algorithms._002.Solution();
-        com.jsonlog.algorithms._002.Solution.ListNode l1 = solution2.new ListNode(2);
-        l1.next = solution2.new ListNode(4);
-        l1.next.next = solution2.new ListNode(3);
+        ListNode l1 = new ListNode(2);
+        l1.next = new ListNode(4);
+        l1.next.next = new ListNode(3);
 
-        com.jsonlog.algorithms._002.Solution.ListNode l2 = solution2.new ListNode(5);
-        l2.next = solution2.new ListNode(6);
-        l2.next.next = solution2.new ListNode(4);
+        ListNode l2 = new ListNode(5);
+        l2.next = new ListNode(6);
+        l2.next.next = new ListNode(4);
 
-        com.jsonlog.algorithms._002.Solution.ListNode result2 = solution2.addTwoNumbers2(l1,l2);
+        ListNode result2 = solution2.addTwoNumbers2(l1,l2);
         while (result2 != null){
 //            System.out.print(result2.val);
             result2 = result2.next;
@@ -48,17 +48,29 @@ public class myClass {
 //        System.out.println(solution20.isValid("([k])"));
 
         com.jsonlog.algorithms._021.Solution solution21 = new com.jsonlog.algorithms._021.Solution();
-        com.jsonlog.algorithms._021.Solution.ListNode l21 = solution21.new ListNode(1);
-        l21.next = solution21.new ListNode(2);
-        l21.next.next = solution21.new ListNode(4);
+        ListNode l21 = new ListNode(1);
+        l21.next = new ListNode(2);
+        l21.next.next = new ListNode(4);
 
-        com.jsonlog.algorithms._021.Solution.ListNode l22 = solution21.new ListNode(1);
-        l22.next = solution21.new ListNode(3);
-        l22.next.next = solution21.new ListNode(4);
-        com.jsonlog.algorithms._021.Solution.ListNode result21 = solution21.mergeTwoLists(l21,l22);
+        ListNode l22 = new ListNode(1);
+        l22.next = new ListNode(3);
+        l22.next.next = new ListNode(4);
+        ListNode result21 = solution21.mergeTwoLists(l21,l22);
         while (result21 != null){
 //            System.out.print(result21.val);
             result21 = result21.next;
+        }
+        System.out.println();
+
+        com.jsonlog.algorithms._024.Solution solution24 = new com.jsonlog.algorithms._024.Solution();
+        ListNode l24 = new ListNode(1);
+        l24.next = new ListNode(2);
+        l24.next.next = new ListNode(3);
+        l24.next.next.next = new ListNode(4);
+        ListNode result24 = solution24.swapPairs(l24);
+        while (result24 != null){
+            System.out.print(result24.val);
+            result24 = result24.next;
         }
         System.out.println();
     }

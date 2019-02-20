@@ -1,18 +1,11 @@
 package com.jsonlog.algorithms._021;
 
+import com.jsonlog.algorithms.ListNode;
+
 /**
  * Created by log on 10/1/2019.
  */
 public class Solution {
-    public class ListNode {
-        public int val;
-        public ListNode next;
-
-        public ListNode(int x) {
-            val = x;
-            next = null;
-        }
-    }
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         if(l1 == null) return l2;
         if(l2 == null) return l1;

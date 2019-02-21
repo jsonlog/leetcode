@@ -1,6 +1,6 @@
-| No. | Problem | Stumped |
-|---|:---------:|----------|
-|001  | [Two Sum](https://leetcode.com/problems/two-sum/) | [Easy*****](https://github.com/jsonlog/leetcode/blob/master/Algorithms/src/main/java/com/jsonlog/algorithms/_001/Solution.java) |
+| No. | Problem | Stumped | Algorithms | time complexity | space complexity|
+|---|:---------:|----------|----------|----------|----------|----------|
+|001  | [Two Sum](https://leetcode.com/problems/two-sum/) | [Easy*****](https://github.com/jsonlog/leetcode/blob/master/Algorithms/src/main/java/com/jsonlog/algorithms/_001/Solution.java) ||O(n2)|
 |002  | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | [Medium****](https://github.com/jsonlog/leetcode/blob/master/Algorithms/src/main/java/com/jsonlog/algorithms/_002/Solution.java) |
 |008  | [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/) | [Easy*****](https://github.com/jsonlog/leetcode/blob/master/Algorithms/src/main/java/com/jsonlog/algorithms/_008/Solution.java) |
 | 012 | [Integer to Roman](https://leetcode.com/problems/integer-to-roman) | [Medium****](https://github.com/jsonlog/leetcode/blob/master/Algorithms/src/main/java/com/jsonlog/algorithms/_012/Solution.java) |

@@ -17,13 +17,7 @@ public class myClass {
         ListNode l2 = new ListNode(5);
         l2.next = new ListNode(6);
         l2.next.next = new ListNode(4);
-
-        ListNode result2 = solution2.addTwoNumbers2(l1,l2);
-        while (result2 != null){
-//            System.out.print(result2.val);
-            result2 = result2.next;
-        }
-        System.out.println();
+//        System.out.println(solution2.addTwoNumbers2(l1,l2));
 
         com.jsonlog.algorithms._008.Solution solution8 = new com.jsonlog.algorithms._008.Solution();
 //        System.out.println(solution8.myAtoi("42"));
@@ -48,32 +42,35 @@ public class myClass {
 //        System.out.println(solution20.isValid("([k])"));
 
         com.jsonlog.algorithms._021.Solution solution21 = new com.jsonlog.algorithms._021.Solution();
-        ListNode l21 = new ListNode(1);
-        l21.next = new ListNode(2);
-        l21.next.next = new ListNode(4);
-
-        ListNode l22 = new ListNode(1);
-        l22.next = new ListNode(3);
-        l22.next.next = new ListNode(4);
-        ListNode result21 = solution21.mergeTwoLists(l21,l22);
-        while (result21 != null){
-//            System.out.print(result21.val);
-            result21 = result21.next;
-        }
-        System.out.println();
+        ListNode l21 = new ListNode(1,new ListNode(2,new ListNode(4)));
+        ListNode l22 = new ListNode(1,new ListNode(3,new ListNode(4)));
+//        System.out.println(solution21.mergeTwoLists(l21,l22));
 
         com.jsonlog.algorithms._024.Solution solution24 = new com.jsonlog.algorithms._024.Solution();
-        ListNode l24 = new ListNode(1);
-        l24.next = new ListNode(2);
-        l24.next.next = new ListNode(3);
-        l24.next.next.next = new ListNode(4);
-        ListNode result24 = solution24.swapPairs(l24);
-        while (result24 != null){
-            System.out.print(result24.val);
-            result24 = result24.next;
-        }
-        System.out.println();
+        ListNode l24 = new ListNode(1,new ListNode(2,new ListNode(3,new ListNode(4))));
+//        System.out.println(solution24.swapPairs(l24));
+
+        com.jsonlog.algorithms._027.Solution solution27 = new com.jsonlog.algorithms._027.Solution();
+//        System.out.println(solution27.removeElement(new int[]{0,1,2,2,3,0,4,2},2));
+
+        com.jsonlog.algorithms._028.Solution solution28 = new com.jsonlog.algorithms._028.Solution();
+//        System.out.println(solution28.strStr("hello","ll"));
+
+        com.jsonlog.algorithms._067.Solution solution67 = new com.jsonlog.algorithms._067.Solution();
+//        System.out.println(solution67.addBinary("1010","1011"));
+
+        com.jsonlog.algorithms._069.Solution solution69 = new com.jsonlog.algorithms._069.Solution();
+//        System.out.println(solution69.mySqrt(8));
+
+        com.jsonlog.algorithms._070.Solution solution70 = new com.jsonlog.algorithms._070.Solution();
+//        System.out.println(solution70.climbStairs(2));
+
+        com.jsonlog.algorithms._088.Solution solution88 = new com.jsonlog.algorithms._088.Solution();
+//        System.out.println(solution88.merge(new int[]{1,2,3,0,0,0},3,new int[]{2,5,6},3));
+
+
     }
     //6 7 9 14 19 26
+    //kmp DP Dynamic Programming DFS BFS
 }
 

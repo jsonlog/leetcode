@@ -68,7 +68,12 @@ public class myClass {
         com.jsonlog.algorithms._088.Solution solution88 = new com.jsonlog.algorithms._088.Solution();
 //        System.out.println(solution88.merge(new int[]{1,2,3,0,0,0},3,new int[]{2,5,6},3));
 
+        com.jsonlog.algorithms._102.Solution solution102 = new com.jsonlog.algorithms._102.Solution();
+//        System.out.println(solution102.levelOrder(new TreeNode(3,9,new TreeNode(20,15,7))));
 
+        com.jsonlog.algorithms._125.Solution solution125 = new com.jsonlog.algorithms._125.Solution();
+        System.out.println(solution125.isPalindrome("A man, a plan, a canal: Panama"));
+        System.out.println(solution125.isPalindrome("race a car"));
     }
     //6 7 9 14 19 26
     //kmp DP Dynamic Programming DFS BFS

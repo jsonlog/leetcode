@@ -1,8 +1,117 @@
 package com.jsonlog.algorithms;
 import com.jsonlog.algorithms.ListNode;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.Queue;
+
 import javax.sql.rowset.serial.SerialStruct;
 
 public class myClass {
+    public static int[] stringToIntegerArray(String input) {
+        input = input.trim();
+        input = input.substring(1, input.length() - 1);
+        if (input.length() == 0) {
+            return new int[0];
+        }
+
+        String[] parts = input.split(",");
+        int[] output = new int[parts.length];
+        for(int index = 0; index < parts.length; index++) {
+            String part = parts[index].trim();
+            output[index] = Integer.parseInt(part);
+        }
+        return output;
+    }
+
+    public static ListNode stringToListNode(String input) {
+        // Generate array from the input
+        int[] nodeValues = stringToIntegerArray(input);
+
+        // Now convert that list into linked list
+        ListNode dummyRoot = new ListNode(0);
+        ListNode ptr = dummyRoot;
+        for(int item : nodeValues) {
+            ptr.next = new ListNode(item);
+            ptr = ptr.next;
+        }
+        return dummyRoot.next;
+    }
+
+    public static String listNodeToString(ListNode node) {
+        if (node == null) {
+            return "[]";
+        }
+
+        String result = "";
+        while (node != null) {
+            result += Integer.toString(node.val) + ", ";
+            node = node.next;
+        }
+        return "[" + result.substring(0, result.length() - 2) + "]";
+    }
+    public static TreeNode stringToTreeNode(String input) {
+        input = input.trim();
+        input = input.substring(1, input.length() - 1);
+        if (input.length() == 0) {
+            return null;
+        }
+
+        String[] parts = input.split(",");
+        String item = parts[0];
+        TreeNode root = new TreeNode(Integer.parseInt(item));
+        Queue<TreeNode> nodeQueue = new LinkedList<>();
+        nodeQueue.add(root);
+
+        int index = 1;
+        while(!nodeQueue.isEmpty()) {
+            TreeNode node = nodeQueue.remove();
+
+            if (index == parts.length) {
+                break;
+            }
+
+            item = parts[index++];
+            item = item.trim();
+            if (!item.equals("null")) {
+                int leftNumber = Integer.parseInt(item);
+                node.left = new TreeNode(leftNumber);
+                nodeQueue.add(node.left);
+            }
+
+            if (index == parts.length) {
+                break;
+            }
+
+            item = parts[index++];
+            item = item.trim();
+            if (!item.equals("null")) {
+                int rightNumber = Integer.parseInt(item);
+                node.right = new TreeNode(rightNumber);
+                nodeQueue.add(node.right);
+            }
+        }
+        return root;
+    }
+/*
+    public static void main(String[] args) throws IOException {
+        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+        String line;
+        while ((line = in.readLine()) != null) {
+            TreeNode root = stringToTreeNode(line);
+
+            boolean ret = new Solution().isValidBST(root);
+
+            String out = booleanToString(ret);
+
+            System.out.print(out);
+        }
+    }
+ */
+    public static String booleanToString(boolean input) {
+        return input ? "True" : "False";
+    }
     public static void main(String[] args) {
 //        com.jsonlog.algorithms._001.Solution solution = new com.jsonlog.algorithms._001.Solution();
         com.jsonlog.algorithms._001.Solution solution1 = new com.jsonlog.algorithms._001.Solution();
@@ -10,14 +119,12 @@ public class myClass {
 //        System.out.println(result1[0]+"-"+result1[1]);//new int[]{0, 4, 3, 0}, 0));
 
         com.jsonlog.algorithms._002.Solution solution2 = new com.jsonlog.algorithms._002.Solution();
-        ListNode l1 = new ListNode(2);
-        l1.next = new ListNode(4);
-        l1.next.next = new ListNode(3);
+        ListNode l1 = stringToListNode("[2,4,3]");
 
         ListNode l2 = new ListNode(5);
         l2.next = new ListNode(6);
         l2.next.next = new ListNode(4);
-//        System.out.println(solution2.addTwoNumbers2(l1,l2));
+//        System.out.println(listNodeToString(solution2.addTwoNumbers2(l1,l2)));
 
         com.jsonlog.algorithms._008.Solution solution8 = new com.jsonlog.algorithms._008.Solution();
 //        System.out.println(solution8.myAtoi("42"));
@@ -85,7 +192,23 @@ public class myClass {
 //        System.out.println(solution77.combine(4,2));
 
         com.jsonlog.algorithms._078.Solution solution78 = new com.jsonlog.algorithms._078.Solution();
-        System.out.println(solution78.subsets(new int[]{1,2,3}));
+//        System.out.println(solution78.subsets(new int[]{1,2,3}));
+
+        com.jsonlog.algorithms._079.Solution solution79 = new com.jsonlog.algorithms._079.Solution();
+//        System.out.println(solution79.exist(new char[][]{{'A','B','C','E'},{'S','F','C','S'},{'A','D','E','E'}},"ABCCED"));
+
+        com.jsonlog.algorithms._127.Solution solution127 = new com.jsonlog.algorithms._127.Solution();
+//        System.out.println(solution127.ladderLength("hit","cog", new LinkedList<>(Arrays.asList("hot","dot","dog","lot","log","cog"))));
+
+        com.jsonlog.algorithms._098.Solution solution98 = new com.jsonlog.algorithms._098.Solution();
+        System.out.println(solution98.isValidBST(stringToTreeNode("[5,1,4,null,null,3,6]")));
+
+
+
+
+
+
+
 
     }
     //6 7 9 14 19 26

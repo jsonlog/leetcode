@@ -72,10 +72,25 @@ public class myClass {
 //        System.out.println(solution102.levelOrder(new TreeNode(3,9,new TreeNode(20,15,7))));
 
         com.jsonlog.algorithms._125.Solution solution125 = new com.jsonlog.algorithms._125.Solution();
-        System.out.println(solution125.isPalindrome("A man, a plan, a canal: Panama"));
-        System.out.println(solution125.isPalindrome("race a car"));
+//        System.out.println(solution125.isPalindrome("A man, a plan, a canal: Panama"));
+//        System.out.println(solution125.isPalindrome("race a car"));
+
+        com.jsonlog.algorithms._022.Solution solution22 = new com.jsonlog.algorithms._022.Solution();
+//        System.out.println(solution22.generateParenthesis(3));
+
+        com.jsonlog.algorithms._049.Solution solution49 = new com.jsonlog.algorithms._049.Solution();
+//        System.out.println(solution49.groupAnagrams(new String[]{"eat", "tea", "tan", "ate", "nat", "bat"}));
+
+        com.jsonlog.algorithms._077.Solution solution77 = new com.jsonlog.algorithms._077.Solution();
+//        System.out.println(solution77.combine(4,2));
+
+        com.jsonlog.algorithms._078.Solution solution78 = new com.jsonlog.algorithms._078.Solution();
+        System.out.println(solution78.subsets(new int[]{1,2,3}));
+
     }
     //6 7 9 14 19 26
-    //kmp DP Dynamic Programming DFS BFS
+    //kmp
+    //记忆化搜索
+    //分治法 分解子问题 最优解
 }
 

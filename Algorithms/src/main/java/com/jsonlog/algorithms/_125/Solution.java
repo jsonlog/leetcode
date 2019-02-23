@@ -8,13 +8,13 @@ public class Solution {
     }
 
     boolean isHelp(String s) {
-        System.out.println(s);
+//        System.out.println(s);
         if (s.length() <= 1) {
-            System.out.println("ttttttt");
+//            System.out.println("ttttttt");
             return true;
         }
         if (s.charAt(0) != s.charAt(s.length() - 1)) {
-            System.out.println(s.charAt(0)+"fffff"+s.charAt(s.length() - 1));
+//            System.out.println(s.charAt(0)+"fffff"+s.charAt(s.length() - 1));
             return false;
         }
         return isHelp(s.substring(1, s.length() - 1));

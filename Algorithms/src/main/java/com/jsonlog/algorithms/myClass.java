@@ -1,12 +1,9 @@
 package com.jsonlog.algorithms;
-import com.jsonlog.algorithms.ListNode;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
-
-import javax.sql.rowset.serial.SerialStruct;
 
 public class myClass {
     public static int[] stringToIntegerArray(String input) {
@@ -153,6 +150,10 @@ public class myClass {
         ListNode l22 = new ListNode(1,new ListNode(3,new ListNode(4)));
 //        System.out.println(solution21.mergeTwoLists(l21,l22));
 
+        com.jsonlog.algorithms._023.Solution solution23 = new com.jsonlog.algorithms._023.Solution();
+//        System.out.println(listNodeToString(solution23.mergeKLists(new ListNode[]{stringToListNode("[1,4,5]"),stringToListNode("[1,3,4]"),stringToListNode("[2,6]")})));
+
+
         com.jsonlog.algorithms._024.Solution solution24 = new com.jsonlog.algorithms._024.Solution();
         ListNode l24 = new ListNode(1,new ListNode(2,new ListNode(3,new ListNode(4))));
 //        System.out.println(solution24.swapPairs(l24));
@@ -191,9 +192,6 @@ public class myClass {
         com.jsonlog.algorithms._077.Solution solution77 = new com.jsonlog.algorithms._077.Solution();
 //        System.out.println(solution77.combine(4,2));
 
-        com.jsonlog.algorithms._078.Solution solution78 = new com.jsonlog.algorithms._078.Solution();
-//        System.out.println(solution78.subsets(new int[]{1,2,3}));
-
         com.jsonlog.algorithms._079.Solution solution79 = new com.jsonlog.algorithms._079.Solution();
 //        System.out.println(solution79.exist(new char[][]{{'A','B','C','E'},{'S','F','C','S'},{'A','D','E','E'}},"ABCCED"));
 
@@ -201,9 +199,20 @@ public class myClass {
 //        System.out.println(solution127.ladderLength("hit","cog", new LinkedList<>(Arrays.asList("hot","dot","dog","lot","log","cog"))));
 
         com.jsonlog.algorithms._098.Solution solution98 = new com.jsonlog.algorithms._098.Solution();
-        System.out.println(solution98.isValidBST(stringToTreeNode("[5,1,4,null,null,3,6]")));
+//        System.out.println(solution98.isValidBST(stringToTreeNode("[5,1,4,null,null,3,6]")));
 
+        //39 40 ,46 47, 78 90, 131
+        com.jsonlog.algorithms._039.Solution solution39 = new com.jsonlog.algorithms._039.Solution();
+//        System.out.println(solution39.combinationSum(new int[]{2,3,5},8));
 
+        com.jsonlog.algorithms._040.Solution solution40 = new com.jsonlog.algorithms._040.Solution();
+        System.out.println(solution40.combinationSum2(new int[]{10,1,2,7,6,1,5},8));
+
+        com.jsonlog.algorithms._078.Solution solution78 = new com.jsonlog.algorithms._078.Solution();
+//        System.out.println(solution78.subsets(new int[]{1,2,3}));
+
+        com.jsonlog.algorithms._090.Solution solution90 = new com.jsonlog.algorithms._090.Solution();
+//        System.out.println(solution90.subsetsWithDup(new int[]{1,2,2}));
 
 
 

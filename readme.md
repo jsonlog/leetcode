@@ -19,9 +19,9 @@
 | 046 | [Permutations](https://leetcode.com/problems/permutations) | [Medium****](https://github.com/jsonlog/leetcode/blob/master/Algorithms/src/main/java/com/jsonlog/algorithms/_046/Solution.java) |backtrack DFS||
 | 047 | [Permutations II](https://leetcode.com/problems/permutations-ii/) | [Medium****](https://github.com/jsonlog/leetcode/blob/master/Algorithms/src/main/java/com/jsonlog/algorithms/_047/Solution.java) |backtrack||
 | 049 | [Anagrams](https://leetcode.com/problems/group-anagrams) | [Medium****](https://github.com/jsonlog/leetcode/blob/master/Algorithms/src/main/java/com/jsonlog/algorithms/_049/Solution.java) |HashMap||
-|056  | [Merge Intervals](https://leetcode.com/problems/merge-intervals) | [Hard*****](https://github.com/jsonlog/leetcode/blob/master/Algorithms/src/main/java/com/jsonlog/algorithms/_056/Solution.java) |||
-|057  | [Insert Interval](https://leetcode.com/problems/insert-interval) | [Hard*****](https://github.com/jsonlog/leetcode/blob/master/Algorithms/src/main/java/com/jsonlog/algorithms/_057/Solution.java) |||
-|065  | [Valid Number](https://leetcode.com/problems/valid-number) | [Hard*****](https://github.com/jsonlog/leetcode/blob/master/Algorithms/src/main/java/com/jsonlog/algorithms/_065/Solution.java) |||
+|056  | [Merge Intervals](https://leetcode.com/problems/merge-intervals) | [Hard*****](https://github.com/jsonlog/leetcode/blob/master/Algorithms/src/main/java/com/jsonlog/algorithms/_056/Solution.java) ||O(N)|
+|057  | [Insert Interval](https://leetcode.com/problems/insert-interval) | [Hard*****](https://github.com/jsonlog/leetcode/blob/master/Algorithms/src/main/java/com/jsonlog/algorithms/_057/Solution.java) ||O(N)|
+|065  | [Valid Number](https://leetcode.com/problems/valid-number) | [Hard*****](https://github.com/jsonlog/leetcode/blob/master/Algorithms/src/main/java/com/jsonlog/algorithms/_065/Solution.java) |ifs||
 | 067 | [Add Binary](https://leetcode.com/problems/add-binary) | [Easy****](https://github.com/jsonlog/leetcode/blob/master/Algorithms/src/main/java/com/jsonlog/algorithms/_067/Solution.java) ||O(N)|
 | 069 | [Sqrt(x)](https://leetcode.com/problems/sqrtx) | [Easy****](https://github.com/jsonlog/leetcode/blob/master/Algorithms/src/main/java/com/jsonlog/algorithms/_069/Solution.java) |dichotomy||
 |070  | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs) | [Easy*****](https://github.com/jsonlog/leetcode/blob/master/Algorithms/src/main/java/com/jsonlog/algorithms/_070/Solution.java) |DP||

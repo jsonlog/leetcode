@@ -2,7 +2,9 @@ package com.jsonlog.algorithms;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Queue;
 
 public class myClass {
@@ -164,6 +166,22 @@ public class myClass {
         com.jsonlog.algorithms._028.Solution solution28 = new com.jsonlog.algorithms._028.Solution();
 //        System.out.println(solution28.strStr("hello","ll"));
 
+        com.jsonlog.algorithms._056.Solution solution56 = new com.jsonlog.algorithms._056.Solution();
+        List<Interval> result56 = Arrays.asList(new Interval(1,3),new Interval(2,6),new Interval(8,10),new Interval(10,14),new Interval(15,18));
+//        System.out.println(solution56.merge(result56));
+/*
+        Iterator iterator = solution56.merge(result56).iterator();
+        while(iterator.hasNext()){
+            Interval interval = (Interval) iterator.next();
+            System.out.println(interval.start+","+interval.end);
+        }
+*/
+        com.jsonlog.algorithms._057.Solution solution57 = new com.jsonlog.algorithms._057.Solution();
+//        System.out.println(solution57.insert(Arrays.asList(new Interval(1,2),new Interval(3,5),new Interval(6,7),new Interval(8,10),new Interval(12,16)),new Interval(4,8)));
+
+        com.jsonlog.algorithms._065.Solution solution65 = new com.jsonlog.algorithms._065.Solution();
+//        System.out.println(solution65.isNumber(" 99e2.5 "));
+
         com.jsonlog.algorithms._067.Solution solution67 = new com.jsonlog.algorithms._067.Solution();
 //        System.out.println(solution67.addBinary("1010","1011"));
 
@@ -206,7 +224,7 @@ public class myClass {
 //        System.out.println(solution39.combinationSum(new int[]{2,3,5},8));
 
         com.jsonlog.algorithms._040.Solution solution40 = new com.jsonlog.algorithms._040.Solution();
-        System.out.println(solution40.combinationSum2(new int[]{10,1,2,7,6,1,5},8));
+//        System.out.println(solution40.combinationSum2(new int[]{10,1,2,7,6,1,5},8));
 
         com.jsonlog.algorithms._078.Solution solution78 = new com.jsonlog.algorithms._078.Solution();
 //        System.out.println(solution78.subsets(new int[]{1,2,3}));

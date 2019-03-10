@@ -118,11 +118,11 @@ public class myClass {
 //        System.out.println(result1[0]+"-"+result1[1]);//new int[]{0, 4, 3, 0}, 0));
 
         com.jsonlog.algorithms._002.Solution solution2 = new com.jsonlog.algorithms._002.Solution();
-        ListNode l1 = stringToListNode("[2,4,3]");
-
-        ListNode l2 = new ListNode(5);
-        l2.next = new ListNode(6);
-        l2.next.next = new ListNode(4);
+        ListNode l1 = new ListNode(new int[]{2,4,3});
+        ListNode l2 = new ListNode(5,6,4);
+//        ListNode l2 = new ListNode(5);
+//        l2.next = new ListNode(6);
+//        l2.next.next = new ListNode(4);
 //        System.out.println(listNodeToString(solution2.addTwoNumbers2(l1,l2)));
 
         com.jsonlog.algorithms._008.Solution solution8 = new com.jsonlog.algorithms._008.Solution();
@@ -231,8 +231,6 @@ public class myClass {
 
         com.jsonlog.algorithms._090.Solution solution90 = new com.jsonlog.algorithms._090.Solution();
 //        System.out.println(solution90.subsetsWithDup(new int[]{1,2,2}));
-
-
 
 
 

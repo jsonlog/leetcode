@@ -25,7 +25,20 @@ public class Solution {
         for(char c : s.toCharArray()) a[c-'a']++;
         return Arrays.toString(a);
     }
-//    public List<List<String>> groupAnagrams2(String[] strs) {
+    public List<List<String>> groupAnagrams2(String[] strs) {
+        Map<String, List<String>> map = new HashMap<>();
+        for (String word : strs) {
+            char[] c = word.toCharArray();
+            Arrays.sort(c);
+            String key = new String(c);
+            if (!map.containsKey(key)) {
+                map.put(key, new ArrayList());
+            }
+            map.get(key).add(word);
+        }
+        return new ArrayList<>(map.values());
+    }
+//    public List<List<String>> groupAnagrams3(String[] strs) {
 //        Map<Map<Character, Integer>, List<String>> map = new HashMap<>();
 //        for (String str : strs) {
 //            Map<Character, Integer> count = new HashMap<>();

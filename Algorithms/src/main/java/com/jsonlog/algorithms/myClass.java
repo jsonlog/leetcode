@@ -50,6 +50,14 @@ public class myClass {
         }
         return "[" + result.substring(0, result.length() - 2) + "]";
     }
+    /*
+    Given binary tree [3,9,20,null,null,15,7],
+        3
+       / \
+      9  20
+        /  \
+       15   7
+     */
     public static TreeNode stringToTreeNode(String input) {
         input = input.trim();
         input = input.substring(1, input.length() - 1);
@@ -123,7 +131,7 @@ public class myClass {
 //        ListNode l2 = new ListNode(5);
 //        l2.next = new ListNode(6);
 //        l2.next.next = new ListNode(4);
-//        System.out.println(listNodeToString(solution2.addTwoNumbers2(l1,l2)));
+//        System.out.println(listNodeToString(solution2.addTwoNumbers(l1,l2)));
 
         com.jsonlog.algorithms._008.Solution solution8 = new com.jsonlog.algorithms._008.Solution();
 //        System.out.println(solution8.myAtoi("42"));
@@ -155,7 +163,6 @@ public class myClass {
         com.jsonlog.algorithms._023.Solution solution23 = new com.jsonlog.algorithms._023.Solution();
 //        System.out.println(listNodeToString(solution23.mergeKLists(new ListNode[]{stringToListNode("[1,4,5]"),stringToListNode("[1,3,4]"),stringToListNode("[2,6]")})));
 
-
         com.jsonlog.algorithms._024.Solution solution24 = new com.jsonlog.algorithms._024.Solution();
         ListNode l24 = new ListNode(1,new ListNode(2,new ListNode(3,new ListNode(4))));
 //        System.out.println(solution24.swapPairs(l24));
@@ -166,16 +173,19 @@ public class myClass {
         com.jsonlog.algorithms._028.Solution solution28 = new com.jsonlog.algorithms._028.Solution();
 //        System.out.println(solution28.strStr("hello","ll"));
 
+        com.jsonlog.algorithms._049.Solution solution49 = new com.jsonlog.algorithms._049.Solution();
+//        System.out.println(solution49.groupAnagrams(new String[]{"eat", "tea", "tan", "ate", "nat", "bat"}));
+
         com.jsonlog.algorithms._056.Solution solution56 = new com.jsonlog.algorithms._056.Solution();
         List<Interval> result56 = Arrays.asList(new Interval(1,3),new Interval(2,6),new Interval(8,10),new Interval(10,14),new Interval(15,18));
 //        System.out.println(solution56.merge(result56));
-/*
-        Iterator iterator = solution56.merge(result56).iterator();
-        while(iterator.hasNext()){
-            Interval interval = (Interval) iterator.next();
-            System.out.println(interval.start+","+interval.end);
-        }
-*/
+
+//        Iterator iterator = solution56.merge(result56).iterator();
+//        while(iterator.hasNext()){
+//            Interval interval = (Interval) iterator.next();
+//            System.out.println(interval.start+","+interval.end);
+//        }
+
         com.jsonlog.algorithms._057.Solution solution57 = new com.jsonlog.algorithms._057.Solution();
 //        System.out.println(solution57.insert(Arrays.asList(new Interval(1,2),new Interval(3,5),new Interval(6,7),new Interval(8,10),new Interval(12,16)),new Interval(4,8)));
 
@@ -188,51 +198,69 @@ public class myClass {
         com.jsonlog.algorithms._069.Solution solution69 = new com.jsonlog.algorithms._069.Solution();
 //        System.out.println(solution69.mySqrt(8));
 
-        com.jsonlog.algorithms._070.Solution solution70 = new com.jsonlog.algorithms._070.Solution();
-//        System.out.println(solution70.climbStairs(2));
-
         com.jsonlog.algorithms._088.Solution solution88 = new com.jsonlog.algorithms._088.Solution();
 //        System.out.println(solution88.merge(new int[]{1,2,3,0,0,0},3,new int[]{2,5,6},3));
-
-        com.jsonlog.algorithms._102.Solution solution102 = new com.jsonlog.algorithms._102.Solution();
-//        System.out.println(solution102.levelOrder(new TreeNode(3,9,new TreeNode(20,15,7))));
 
         com.jsonlog.algorithms._125.Solution solution125 = new com.jsonlog.algorithms._125.Solution();
 //        System.out.println(solution125.isPalindrome("A man, a plan, a canal: Panama"));
 //        System.out.println(solution125.isPalindrome("race a car"));
 
-        com.jsonlog.algorithms._022.Solution solution22 = new com.jsonlog.algorithms._022.Solution();
-//        System.out.println(solution22.generateParenthesis(3));
 
-        com.jsonlog.algorithms._049.Solution solution49 = new com.jsonlog.algorithms._049.Solution();
-//        System.out.println(solution49.groupAnagrams(new String[]{"eat", "tea", "tan", "ate", "nat", "bat"}));
 
-        com.jsonlog.algorithms._077.Solution solution77 = new com.jsonlog.algorithms._077.Solution();
-//        System.out.println(solution77.combine(4,2));
 
-        com.jsonlog.algorithms._079.Solution solution79 = new com.jsonlog.algorithms._079.Solution();
-//        System.out.println(solution79.exist(new char[][]{{'A','B','C','E'},{'S','F','C','S'},{'A','D','E','E'}},"ABCCED"));
+
+//DP
+        com.jsonlog.algorithms._070.Solution solution70 = new com.jsonlog.algorithms._070.Solution();
+//        System.out.println(solution70.climbStairs(2));
+
+        com.jsonlog.algorithms._091.Solution solution91 = new com.jsonlog.algorithms._091.Solution();
+//        System.out.println(solution91.numDecodings("12"));
+
+
+//BFS
+        com.jsonlog.algorithms._102.Solution solution102 = new com.jsonlog.algorithms._102.Solution();
+//        System.out.println(solution102.levelOrder(new TreeNode(3,9,new TreeNode(20,15,7))));
 
         com.jsonlog.algorithms._127.Solution solution127 = new com.jsonlog.algorithms._127.Solution();
 //        System.out.println(solution127.ladderLength("hit","cog", new LinkedList<>(Arrays.asList("hot","dot","dog","lot","log","cog"))));
 
-        com.jsonlog.algorithms._098.Solution solution98 = new com.jsonlog.algorithms._098.Solution();
-//        System.out.println(solution98.isValidBST(stringToTreeNode("[5,1,4,null,null,3,6]")));
 
-        //39 40 ,46 47, 78 90, 131
+//DFS 22 79 98 129 //backtrack 39 40 ,46 47, 78 90, 131
+        com.jsonlog.algorithms._022.Solution solution22 = new com.jsonlog.algorithms._022.Solution();
+//        System.out.println(solution22.generateParenthesis(3));
+
         com.jsonlog.algorithms._039.Solution solution39 = new com.jsonlog.algorithms._039.Solution();
 //        System.out.println(solution39.combinationSum(new int[]{2,3,5},8));
 
         com.jsonlog.algorithms._040.Solution solution40 = new com.jsonlog.algorithms._040.Solution();
 //        System.out.println(solution40.combinationSum2(new int[]{10,1,2,7,6,1,5},8));
 
+        com.jsonlog.algorithms._046.Solution solution46 = new com.jsonlog.algorithms._046.Solution();
+//        System.out.println(solution46.permute(new int[]{1,2,3}));
+
+        com.jsonlog.algorithms._047.Solution solution47 = new com.jsonlog.algorithms._047.Solution();
+//        System.out.println(solution47.permuteUnique(new int[]{1,1,2}));
+
+        com.jsonlog.algorithms._077.Solution solution77 = new com.jsonlog.algorithms._077.Solution();
+//        System.out.println(solution77.combine(4,2));
+
         com.jsonlog.algorithms._078.Solution solution78 = new com.jsonlog.algorithms._078.Solution();
 //        System.out.println(solution78.subsets(new int[]{1,2,3}));
+
+        com.jsonlog.algorithms._079.Solution solution79 = new com.jsonlog.algorithms._079.Solution();
+//        System.out.println(solution79.exist(new char[][]{{'A','B','C','E'},{'S','F','C','S'},{'A','D','E','E'}},"ABCCED"));
 
         com.jsonlog.algorithms._090.Solution solution90 = new com.jsonlog.algorithms._090.Solution();
 //        System.out.println(solution90.subsetsWithDup(new int[]{1,2,2}));
 
+        com.jsonlog.algorithms._098.Solution solution98 = new com.jsonlog.algorithms._098.Solution();
+//        System.out.println(solution98.isValidBST(stringToTreeNode("[5,1,4,null,null,3,6]")));
 
+        com.jsonlog.algorithms._129.Solution solution129 = new com.jsonlog.algorithms._129.Solution();
+//        System.out.println(solution129.sumNumbers(new TreeNode(1,2,3)));
+
+        com.jsonlog.algorithms._131.Solution solution131 = new com.jsonlog.algorithms._131.Solution();
+//        System.out.println(solution131.partition("aab"));
 
 
     }

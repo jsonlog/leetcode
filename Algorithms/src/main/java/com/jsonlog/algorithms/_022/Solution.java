@@ -9,12 +9,12 @@ public class Solution {
         List<String> result = new LinkedList<String>();
         if (n > 0) {
             System.out.println("if (n > 0), n: " + n + "							 result: " + result);
-            generateParenthesisCore("", n, n, result);
+            backtrack(result,"", n, n);//generateParenthesisCore
         }
         return result;
     }
 
-    private void generateParenthesisCore(String prefix, int left, int right, List<String> result)
+    private void backtrack(List<String> result, String prefix, int left, int right)
     {
 
         if (left == 0 && right == 0) {
@@ -24,12 +24,12 @@ public class Solution {
         // Has left Parenthesis
         if (left > 0) {
             System.out.println("if (left > 0), 		 left: " + left + "	 right: " + right + "	 prefix: " + prefix + "	 result: " + result);
-            generateParenthesisCore(prefix+'(', left-1, right, result);
+            backtrack(result,prefix+'(', left-1, right);
         }
         // has more right Parenthesis
         if (left < right) {
             System.out.println("if (left < right), 	 left: " + left + "	 right: " + right + "	 prefix: " + prefix + "	 result: " + result);
-            generateParenthesisCore(prefix+')', left, right-1, result);
+            backtrack(result, prefix+')', left, right-1);
         }
     }
 }

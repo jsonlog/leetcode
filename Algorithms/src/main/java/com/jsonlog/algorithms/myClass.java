@@ -260,7 +260,7 @@ public class myClass {
 //        System.out.println(solution129.sumNumbers(new TreeNode(1,2,3)));
 
         com.jsonlog.algorithms._131.Solution solution131 = new com.jsonlog.algorithms._131.Solution();
-//        System.out.println(solution131.partition("aab"));
+       System.out.println(solution131.partition("aab"));
 
 
     }

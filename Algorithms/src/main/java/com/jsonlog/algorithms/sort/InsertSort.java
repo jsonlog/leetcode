@@ -29,6 +29,27 @@ public class InsertSort {
         return arr;
     }
 
+    static public int[] insertsort(int sourceArray[]) { //from 0 incr 1
+        int n = sourceArray.length;
+        int[] a = Arrays.copyOf(sourceArray, sourceArray.length);
+        for (int i=1; i<n; i++)       // insert i'th record
+            for (int j=i; (j>0) && (a[j]<a[j-1]); j--)
+              Sort.swap(a, j,j-1);
+        return a;
+    }
+
+    static public int[] insertsort2(int sourceArray[], int n, int from, int incr)
+    {
+        for (int i= from + incr; i<n; i+=incr)
+            for (int j=i; j> from && sourceArray[j]<sourceArray[j-incr]; j-=incr) {
+                int tmp = sourceArray[j];
+                sourceArray[j] = sourceArray[j-incr];
+                sourceArray[j-incr] = tmp;
+            }
+        return sourceArray;
+    }
+
+
     static public int[] sort2(int[] sourceArray){
         // 对 arr 进行拷贝，不改变参数内容
         int[] arr = Arrays.copyOf(sourceArray, sourceArray.length);

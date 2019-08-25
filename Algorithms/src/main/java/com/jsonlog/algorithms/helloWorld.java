@@ -46,10 +46,10 @@ public class helloWorld {
 //        HeapSort
 
         //插入排序3
-//        sout(InsertSort.sort(array));
+        System.out.println(sout(InsertSort.insertsort(array)).equals(sout(sortedArray)));
 
         //归并排序6
-        System.out.println(sout(MergeSort.sort(array)).equals(sout(sortedArray)));
+//        System.out.println(sout(MergeSort.sort(array)).equals(sout(sortedArray)));
 
         //快速排序5
 //        System.out.println(sout(QuickSort.sort(array)).equals(sout(sortedArray)));
@@ -61,7 +61,7 @@ public class helloWorld {
 //        sout(SelectionSort.sort(array));
 
         //希尔排序4
-//        sout(ShellSort.sort(array));
+//        System.out.println(sout(ShellSort.sort(array)).equals(sout(sortedArray)));
 
 //        sout(array);
     }

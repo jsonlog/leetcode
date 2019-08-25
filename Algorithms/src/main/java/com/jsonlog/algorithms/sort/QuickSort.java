@@ -34,7 +34,7 @@ public class QuickSort {
                     array[j--] = array[i];
             }
  */
-            int i = l, j = r, x = arr[l];
+            /*3
             for(;i < j;j--) {
                 if (arr[j] < x) {
                     arr[i] = arr[j];
@@ -46,9 +46,27 @@ public class QuickSort {
                     }
                 }
             }
-            arr[i] = x;
-            quickSort(arr, l, i - 1);
-            quickSort(arr, i + 1, r);
+             */
+            int i1=l-1,i2=r,temp=r, x = arr[r];
+            for(int curr=l;curr<=r;curr++){
+                if(i2 <= temp) {
+                    i1++;
+                    if (arr[i1] > x) {
+                        arr[i2] = arr[i1];
+                        temp = i1;
+                    }
+                }
+                else {//if(i1 >= temp){
+                    i2--;
+                    if (arr[i2] < x) {
+                        arr[i1] = arr[i2];
+                        temp = i2;
+                    }
+                }
+            }
+            if(i1 >= l ) arr[i1] = x;
+            quickSort(arr, l, i1 - 1);
+            quickSort(arr, i1 + 1, r);
         }
         return arr;
     }

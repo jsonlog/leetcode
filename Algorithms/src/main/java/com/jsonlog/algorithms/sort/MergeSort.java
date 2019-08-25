@@ -7,31 +7,36 @@ import java.util.Arrays;
  * @date 2019-08-24
  */
 public class MergeSort {
-static int[] mergesort(int A[], int temp[], int left, int right) {
-  int mid = (left+right)/2;
-  if (left == right) return A;        // List of one element
-  mergesort(A, temp, left, mid);
-  mergesort(A, temp, mid+1, right);
-
-  int i1 = left; int i2 = mid + 1;
-  // Copy subarray to temp
-  for (int i=left; i<=right; i++) temp[i] = A[i];
-  // Do the merge operation back to A
-  for (int curr=left; curr<=right; curr++) {
-    if (i1 == mid+1)      // Left sublist exhausted
-      A[curr] = temp[i2++];
-    else if (i2 > right)  // Right sublist exhausted
-      A[curr] = temp[i1++];
-    else if (temp[i1]<temp[i2])
-      A[curr] = temp[i1++];
-    else A[curr] = temp[i2++];
-  }
-  return A;
-}
     static public int[] sort(int[] sourceArray){
         int[] arr = Arrays.copyOf(sourceArray, sourceArray.length);
-        return mergesort(sourceArray,arr,0,arr.length -1);
+        return mergesort(arr,0,arr.length -1);
     }
+    static int[] mergesort(int arr[], int left, int right) {
+        if (left == right) return arr;        // List of one element
+
+        int i1 = left; //Left sublist start
+        int mid = (left+right)/2;
+        int i2 = mid + 1; //Right sublist start
+        mergesort(arr, left, mid);
+        mergesort(arr, mid+1, right);
+
+
+        int temp[] = new int[arr.length];
+        for (int i=left; i<=right; i++) temp[i] = arr[i];// Copy subarray to temp
+        for (int curr=left; curr<=right; curr++) {// Do the merge operation back to A
+            if (i1 > mid)      // Left sublist end exhausted
+                arr[curr] = temp[i2++];
+            else if (i2 > right)  // Right sublist end exhausted
+                arr[curr] = temp[i1++];
+            else if (temp[i1]<=temp[i2])
+                arr[curr] = temp[i1++];
+            else
+                arr[curr] = temp[i2++];
+        }
+        return arr;
+    }
+
+
     static public int[] sort2(int[] sourceArray){
         // 对 arr 进行拷贝，不改变参数内容
         int[] arr = Arrays.copyOf(sourceArray, sourceArray.length);

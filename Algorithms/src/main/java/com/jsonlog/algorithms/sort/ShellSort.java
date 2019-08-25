@@ -6,8 +6,16 @@ import java.util.Arrays;
  * 希尔排序
  */
 public class ShellSort{
+    static public int[] sort(int sourceArray[]) { // Shellsort
+        int[] arr = Arrays.copyOf(sourceArray, sourceArray.length);
+        int n = sourceArray.length;
+        for (int i=n/2; i>=1; i/=2)  // For each incr
+            for (int j=0; j<i; j++)   // Sort sublists
+                InsertSort.insertsort2(arr, n, j, i);
+        return arr;
+    }
 
-    static public int[] sort(int[] sourceArray) {
+    static public int[] sort2(int[] sourceArray) {
         // 对 arr 进行拷贝，不改变参数内容
         int[] arr = Arrays.copyOf(sourceArray, sourceArray.length);
 

@@ -1,6 +1,6 @@
 package com.jsonlog.algorithms;
 
-import com.jsonlog.algorithms.sort.BubbleSort;
+import com.jsonlog.algorithms.sort.*;
 
 import java.util.Arrays;
 import java.util.Date;
@@ -28,20 +28,51 @@ public class helloWorld {
     }
     static void sort(){
         // 生成随机数组
-        int[] array = randomArray(-1000, 1000, 100);
+        int[] array = randomArray(0, 1000, 100);
         // 使用 Arrays.sort() 排序作为对比
-//        int[] sortedArray = Arrays.copyOf(array, array.length);
-//        Arrays.sort(sortedArray);
+        int[] sortedArray = Arrays.copyOf(array, array.length);
+        Arrays.sort(sortedArray);
 
-        BubbleSort bubbleSort = new BubbleSort();
-        sout(bubbleSort.sort(array));
+        //冒泡排序1
+//        sout(BubbleSort.sort(array));
+
+        //桶排序
+//        BucketSort
+
+        //计数排序
+//        CountingSort
+
+        //堆排序
+//        HeapSort
+
+        //插入排序3
+//        sout(InsertSort.sort(array));
+
+        //归并排序6
+        System.out.println(sout(MergeSort.sort(array)).equals(sout(sortedArray)));
+
+        //快速排序5
+//        System.out.println(sout(QuickSort.sort(array)).equals(sout(sortedArray)));
+
+        //基数排序
+//        RadixSort
+
+        //选择排序2
+//        sout(SelectionSort.sort(array));
+
+        //希尔排序4
+//        sout(ShellSort.sort(array));
+
+//        sout(array);
     }
 
-    static void sout(int[] array){
+    static String sout(int[] array){
+        String string = "";
         for(int i : array){
-            System.out.print(i+" ");
+            string += i+" ";
         }
-        System.out.println();
+        System.out.println(string);
+        return string;
     }
 
     static void random(){

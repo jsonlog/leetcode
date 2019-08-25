@@ -12,6 +12,28 @@ public class InsertSort {
         int[] arr = Arrays.copyOf(sourceArray, sourceArray.length);
 
         // 从下标为1的元素开始选择合适的位置插入，因为下标为0的只有一个元素，默认是有序的
+        for (int i = 0; i < arr.length - 1; i++) {
+
+            // 记录要插入的数据
+            int tmp = arr[i+1];
+            int flag = 0;
+
+            for(int j = 0; j < i+1 ; j++){
+                if(flag == j && arr[j] <= arr[i+1]) flag++;
+                else{
+                    arr[i+1+flag-j] = arr[i+flag-j];//flag -> i 右移
+                    if(j == i) arr[flag] = tmp;
+                }
+            }
+        }
+        return arr;
+    }
+
+    static public int[] sort2(int[] sourceArray){
+        // 对 arr 进行拷贝，不改变参数内容
+        int[] arr = Arrays.copyOf(sourceArray, sourceArray.length);
+
+        // 从下标为1的元素开始选择合适的位置插入，因为下标为0的只有一个元素，默认是有序的
         for (int i = 1; i < arr.length; i++) {
 
             // 记录要插入的数据
